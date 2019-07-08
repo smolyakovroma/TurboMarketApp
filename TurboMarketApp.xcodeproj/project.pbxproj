@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		123FA7E522D3898700486755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FA7E422D3898700486755 /* AppDelegate.swift */; };
-		123FA7E722D3898700486755 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FA7E622D3898700486755 /* ViewController.swift */; };
 		123FA7EA22D3898700486755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123FA7E822D3898700486755 /* Main.storyboard */; };
 		123FA7EC22D3898900486755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 123FA7EB22D3898900486755 /* Assets.xcassets */; };
 		123FA7EF22D3898900486755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123FA7ED22D3898900486755 /* LaunchScreen.storyboard */; };
+		123FA7FB22D3BC4500486755 /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FA7FA22D3BC4500486755 /* ContainerController.swift */; };
+		123FA7FD22D3BC5000486755 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FA7FC22D3BC5000486755 /* HomeController.swift */; };
+		123FA7FF22D3BC6300486755 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FA7FE22D3BC6300486755 /* MenuController.swift */; };
+		123FA80122D3C51200486755 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FA80022D3C51200486755 /* Protocols.swift */; };
+		123FA80322D3CB3500486755 /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FA80222D3CB3500486755 /* MenuOptionCell.swift */; };
+		123FA80522D3D7D200486755 /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FA80422D3D7D200486755 /* MenuOption.swift */; };
+		123FA80722D3D82C00486755 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FA80622D3D82C00486755 /* SettingsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		123FA7E122D3898700486755 /* TurboMarketApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TurboMarketApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		123FA7E422D3898700486755 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		123FA7E622D3898700486755 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		123FA7E922D3898700486755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		123FA7EB22D3898900486755 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		123FA7EE22D3898900486755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		123FA7F022D3898900486755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		123FA7FA22D3BC4500486755 /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
+		123FA7FC22D3BC5000486755 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		123FA7FE22D3BC6300486755 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		123FA80022D3C51200486755 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		123FA80222D3CB3500486755 /* MenuOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
+		123FA80422D3D7D200486755 /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
+		123FA80622D3D82C00486755 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +67,51 @@
 			isa = PBXGroup;
 			children = (
 				123FA7E422D3898700486755 /* AppDelegate.swift */,
-				123FA7E622D3898700486755 /* ViewController.swift */,
 				123FA7E822D3898700486755 /* Main.storyboard */,
 				123FA7EB22D3898900486755 /* Assets.xcassets */,
+				123FA7F922D3BC2400486755 /* Utility */,
+				123FA7F822D3BC1E00486755 /* Model */,
+				123FA7F722D3BC1800486755 /* View */,
+				123FA7F622D3BC0100486755 /* Controller */,
 				123FA7ED22D3898900486755 /* LaunchScreen.storyboard */,
 				123FA7F022D3898900486755 /* Info.plist */,
 			);
 			path = TurboMarketApp;
+			sourceTree = "<group>";
+		};
+		123FA7F622D3BC0100486755 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				123FA7FA22D3BC4500486755 /* ContainerController.swift */,
+				123FA7FE22D3BC6300486755 /* MenuController.swift */,
+				123FA7FC22D3BC5000486755 /* HomeController.swift */,
+				123FA80622D3D82C00486755 /* SettingsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		123FA7F722D3BC1800486755 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				123FA80222D3CB3500486755 /* MenuOptionCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		123FA7F822D3BC1E00486755 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				123FA80422D3D7D200486755 /* MenuOption.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		123FA7F922D3BC2400486755 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				123FA80022D3C51200486755 /* Protocols.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				123FA7E722D3898700486755 /* ViewController.swift in Sources */,
+				123FA80722D3D82C00486755 /* SettingsController.swift in Sources */,
+				123FA80122D3C51200486755 /* Protocols.swift in Sources */,
+				123FA80322D3CB3500486755 /* MenuOptionCell.swift in Sources */,
+				123FA80522D3D7D200486755 /* MenuOption.swift in Sources */,
+				123FA7FD22D3BC5000486755 /* HomeController.swift in Sources */,
+				123FA7FF22D3BC6300486755 /* MenuController.swift in Sources */,
+				123FA7FB22D3BC4500486755 /* ContainerController.swift in Sources */,
 				123FA7E522D3898700486755 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
